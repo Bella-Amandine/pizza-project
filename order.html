@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make your Order</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="header-order">
+        <div class="dark-overflow-order">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-dark mt-4">
+                    <a href="#" class="navbar-brand">
+                        B's Pizza house
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div id="myNavbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">MAKE ORDER</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="text-white text-center pt-5">
+                    <h1 class="home-title-order font-italic">Pizza Builder</h1>
+                    <p>Build your own pizza, and make your order</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="order-form" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="order-title pt-5 pb-2">
+                        <h2 class="text-center">Order Form</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <h3>Build your pizza</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-form">
+                                <form id="order-form">
+
+                                    <div class="form-group">
+                                        <label for="pizza-name">Name</label>
+                                        <input id="pizza-name" type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pizza-size">Select Pizza Size</label>
+                                        <select name="pizza-size" id="pizza-size" class="form-control">
+                                            <option value="small">Small</option>
+                                            <option value="medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pizza-crust">Prefered Pizza Crust</label>
+                                        <select name="pizza-crust" id="pizza-crust" class="form-control">
+                                            <option value="crispy">Crispy</option>
+                                            <option value="stuffed">Stuffed</option>
+                                            <option value="glutted-free">Glutten-Free</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="toppings">Choose your prefered toppings: </label>
+                                        <div class="row">
+                                            <label for="ognion" class="col-md-2">
+                                                <input type="checkbox" name="ognion" id="ognion">
+                                                Oignion
+                                            </label>
+
+                                            <label for="tomatoe" class="col-md-2" class="col-md-2">
+                                                <input type="checkbox" name="tomatoe" id="tomatoe">
+                                                Tomatoe
+                                            </label>
+
+                                            <label for="Cheese" class="col-md-2" class="col-md-2">
+                                                <input type="checkbox" name="Cheese" id="Cheese">
+                                                Cheese
+                                            </label>
+
+                                            <label for="Spinach" class="col-md-2" class="col-md-2">
+                                                <input type="checkbox" name="Spinach" id="Spinach">
+                                                Spinach
+                                            </label>
+
+                                            <label for="Mushrooms" class="col-md-3">
+                                                <input type="checkbox" name="Mushrooms" id="Mushrooms">
+                                                Mushrooms
+                                            </label>
+
+                                            <label for="Olives" class="col-md-2">
+                                                <input type="checkbox" name="Olives" id="Olives">
+                                                Olives
+                                            </label>
+
+                                            <label for="Saucage" class="col-md-2">
+                                                <input type="checkbox" name="Saucage" id="Saucage">
+                                                Saucage
+                                            </label>
+
+                                            <label for="Chicken" class="col-md-2">
+                                                <input type="checkbox" name="Chicken" id="Chicken">
+                                                Chicken
+                                            </label>
+
+                                            <label for="Pepper" class="col-md-2">
+                                                <input type="checkbox" name="Pepper" id="Pepper">
+                                                Pepper
+                                            </label>
+
+                                            <label for="Ham" class="col-md-2">
+                                                <input type="checkbox" name="Ham" id="Ham">
+                                                Ham
+                                            </label>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="delivered-option">Delivered? <small>YES/NO</small></label>
+
+                                        <div class="form-check">
+                                            <input type="radio" name="delivered" value="true" id="delivered-option" class="form-check-input"> 
+                                            <label for="delivery" class="form-check-label">YES</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" name="delivered" value="false" id="delivered-option" class="form-check-input"> 
+                                            <label for="delivery" class="form-check-label">NO</label>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div id="delivery-address" class="form-group">
+                                        <label for="address">Your Address</label>
+                                        <input id="address" type="text" class="form-control">
+                                    </div>
+
+                                    <button class="btn btn-outline-primary">Place order</button>
+
+                                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn">New Order</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

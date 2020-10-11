@@ -18,3 +18,28 @@
     position: relative;
     top: 200px;
 }
+
+#header-order {
+    height: 40vh;
+    background: url("../images/pizza-home.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dark-overflow-order {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.home-title-order {
+    text-shadow: 3px 3px 5px grey;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(175, 171, 171);
+}
+#delivery-address { 
+    display: none;
+}
