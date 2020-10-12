@@ -43,3 +43,11 @@
 #delivery-address { 
     display: none;
 }
+
+#show-order {
+    display: none;
+}
+
+.toppings-title {
+    text-decoration: underline;
+}

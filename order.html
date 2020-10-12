@@ -61,107 +61,109 @@
                         <div class="card-body">
                             <div class="card-form">
                                 <form id="order-form">
-
-                                    <div class="form-group">
-                                        <label for="pizza-name">Name</label>
-                                        <input id="pizza-name" type="text" class="form-control">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="pizza-size">Select Pizza Size</label>
-                                        <select name="pizza-size" id="pizza-size" class="form-control">
-                                            <option value="small">Small</option>
-                                            <option value="medium">Medium</option>
-                                            <option value="large">Large</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="pizza-crust">Prefered Pizza Crust</label>
-                                        <select name="pizza-crust" id="pizza-crust" class="form-control">
-                                            <option value="crispy">Crispy</option>
-                                            <option value="stuffed">Stuffed</option>
-                                            <option value="glutted-free">Glutten-Free</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="toppings">Choose your prefered toppings: </label>
-                                        <div class="row">
-
-                                            <div class="toppings">
-                                                <label for="onion" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="onion" id="onion">
-                                                    Onion
-                                                </label>
+                                    <div id="new-order">
+                                        <div class="form-group">
+                                            <label for="pizza-name">Name</label>
+                                            <input id="pizza-name" type="text" class="form-control">
+                                        </div>
     
-                                                <label for="tomatoe" class="col-md-2" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="tomatoe" id="tomatoe">
-                                                    Tomatoe
-                                                </label>
+                                        <div class="form-group">
+                                            <label for="pizza-size">Select Pizza Size</label>
+                                            <select name="pizza-size" id="pizza-size" class="form-control">
+                                                <option value="small">Small</option>
+                                                <option value="medium">Medium</option>
+                                                <option value="large">Large</option>
+                                            </select>
+                                        </div>
     
-                                                <label for="Cheese" class="col-md-2" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="cheese" id="Cheese">
-                                                    Cheese
-                                                </label>
+                                        <div class="form-group">
+                                            <label for="pizza-crust">Prefered Pizza Crust</label>
+                                            <select name="pizza-crust" id="pizza-crust" class="form-control">
+                                                <option value="crispy">Crispy</option>
+                                                <option value="stuffed">Stuffed</option>
+                                                <option value="glutted-free">Glutten-Free</option>
+                                            </select>
+                                        </div>
     
-                                                <label for="Spinach" class="col-md-2" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="spinach" id="Spinach">
-                                                    Spinach
-                                                </label>
+                                        <div class="form-group">
+                                            <label for="toppings">Choose your prefered toppings: </label>
+                                            <div class="row">
     
-                                                <label for="Mushrooms" class="col-md-3">
-                                                    <input name="toppings[]" type="checkbox" value="mushroom" id="Mushroom">
-                                                    Mushrooms
-                                                </label>
+                                                <div class="toppings">
+                                                    <label for="onion" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="onion" id="onion">
+                                                        Onion
+                                                    </label>
+        
+                                                    <label for="tomatoe" class="col-md-2" >
+                                                        <input name="toppings[]" type="checkbox" value="tomatoe" id="tomatoe">
+                                                        Tomatoe
+                                                    </label>
+        
+                                                    <label for="Cheese" class="col-md-2" >
+                                                        <input name="toppings[]" type="checkbox" value="cheese" id="Cheese">
+                                                        Cheese
+                                                    </label>
+        
+                                                    <label for="Spinach" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="spinach" id="Spinach">
+                                                        Spinach
+                                                    </label>
+        
+                                                    <label for="Mushrooms" class="col-md-3">
+                                                        <input name="toppings[]" type="checkbox" value="mushroom" id="Mushroom">
+                                                        Mushrooms
+                                                    </label>
+        
+                                                    <label for="Olives" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="olive" id="Olive">
+                                                        Olives
+                                                    </label>
+        
+                                                    <label for="Saucage" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="saucage" id="Saucage">
+                                                        Saucage
+                                                    </label>
+        
+                                                    <label for="Chicken" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="chicken" id="Chicken">
+                                                        Chicken
+                                                    </label>
+        
+                                                    <label for="Pepper" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="pepper" id="Pepper">
+                                                        Pepper
+                                                    </label>
+        
+                                                    <label for="Ham" class="col-md-2">
+                                                        <input name="toppings[]" type="checkbox" value="ham" id="Ham">
+                                                        Ham
+                                                    </label>
+                                                </div>
     
-                                                <label for="Olives" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="olive" id="Olive">
-                                                    Olives
-                                                </label>
-    
-                                                <label for="Saucage" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="saucage" id="Saucage">
-                                                    Saucage
-                                                </label>
-    
-                                                <label for="Chicken" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="chicken" id="Chicken">
-                                                    Chicken
-                                                </label>
-    
-                                                <label for="Pepper" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="pepper" id="Pepper">
-                                                    Pepper
-                                                </label>
-    
-                                                <label for="Ham" class="col-md-2">
-                                                    <input name="toppings[]" type="checkbox" value="ham" id="Ham">
-                                                    Ham
-                                                </label>
                                             </div>
-
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <label for="delivered-option">Delivered? <small>YES/NO</small></label>
+    
+                                            <div class="form-check">
+                                                <input type="radio" name="delivered" value="true" id="delivery-yes" class="form-check-input delivery-yes"> 
+                                                <label for="delivery-yes" class="form-check-label">YES</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="radio" name="delivered" value="false" id="delivery-no" class="form-check-input"> 
+                                                <label for="delivery-no" class="form-check-label">NO</label>
+                                            </div>
+                                            
+                                        </div>
+    
+                                        <div id="delivery-address" class="form-group">
+                                            <label for="address">Your Address</label>
+                                            <input id="address" type="text" class="form-control">
                                         </div>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="delivered-option">Delivered? <small>YES/NO</small></label>
-
-                                        <div class="form-check">
-                                            <input type="radio" name="delivered" value="true" id="delivery-yes" class="form-check-input"> 
-                                            <label for="delivery-yes" class="form-check-label">YES</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" name="delivered" value="false" id="delivery-no" class="form-check-input"> 
-                                            <label for="delivery-no" class="form-check-label">NO</label>
-                                        </div>
-                                        
-                                    </div>
-
-                                    <div id="delivery-address" class="form-group">
-                                        <label for="address">Your Address</label>
-                                        <input id="address" type="text" class="form-control">
-                                    </div>
+                             
 
 
                                     <button type="submit" class="btn btn-primary float-right">Place Order</button>
@@ -176,7 +178,7 @@
 
                     <div class="total-price">
                         
-                    </div>
+                    </div>      
 
                     <button id="checkout" class="btn btn-success my-4">Checkout</button>
                 </div>
@@ -196,7 +198,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-9">
+                                    <div class="col-sm-8">
                                         <h5>Item</h5>
                                         <ul id="item" class="list-unstyled">
                                             <li>Pizza Name : <span class="ordered-pizza-name"></span></li>
@@ -205,23 +207,31 @@
                                             <li>Delivered : <span class="delivery-choice"></span></li>
 
                                             <ul id="toppings" class="list-unstyled">
-                                                <p>Toppings</p>
                                                 
                                             </ul>
                                             
                                         </ul>
 
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-4">
                                         <h5>Price</h5>
-                                        <ul id="prices">
-    
+                                        <ul id="prices" class="list-unstyled">
+                                            <li><span class="ordered-pizza-name-price"></span></li>
+                                            <li><span class="ordered-pizza-size-price"></span></li>
+                                            <li><span class="ordered-pizza-crust-price"></span></li>
+                                            <li><span class="delivery-choice-price"></span></li>
+
+                                            <ul id="toppings-price" class="list-unstyled">
+                                                <p></p>
+                                                
+                                            </ul>
+
                                         </ul>
                                     </div>
                                 </div>
     
                                 <hr class="border-white">
-                                <p>Total : <span class="float-right"></span></p>
+                                <p>Total : <span class="float-right total"></span></p>
                                 
                             </div>
                         </div>
