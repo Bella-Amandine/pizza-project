@@ -181,9 +181,51 @@
                     <button id="checkout" class="btn btn-success my-4">Checkout</button>
                 </div>
 
-                <div class="col-md-4 ">
+                <div class="col-md-4">
+                    <div id="show-order">
 
-                   
+                        <div class="order-title pt-5 pb-2">
+                            <h2 class="text-center">Summary</h2>
+                        </div>
+
+                        <div class="card bg-dark text-white">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h3>Your Order</h3>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <h5>Item</h5>
+                                        <ul id="item" class="list-unstyled">
+                                            <li>Pizza Name : <span class="ordered-pizza-name"></span></li>
+                                            <li>Pizza Size : <span class="ordered-pizza-size"></span></li>
+                                            <li>Pizza Crust : <span class="ordered-pizza-crust"></span></li>
+                                            <li>Delivered : <span class="delivery-choice"></span></li>
+
+                                            <ul id="toppings" class="list-unstyled">
+                                                <p>Toppings</p>
+                                                
+                                            </ul>
+                                            
+                                        </ul>
+
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h5>Price</h5>
+                                        <ul id="prices">
+    
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <hr class="border-white">
+                                <p>Total : <span class="float-right"></span></p>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
