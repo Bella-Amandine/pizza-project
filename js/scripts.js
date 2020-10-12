@@ -93,8 +93,6 @@ $("document").ready(function() {
             selectedToppings[index ++] = $(this).val();
         });
 
-
-
         var orderedPizza = new Pizza(inputtedPizzaName, selectedPizzaCrust, selectedPizzaSize);
         
         for(var i=0; i<selectedToppings.length; i++) {
@@ -140,8 +138,12 @@ $("document").ready(function() {
 
         var totalPrice = orderedPizza.calculateTotalPrice();
 
-        $(".total-price").append("<h3 class='alert alert-info'> The Total charge is " + totalPrice + " RwF</h3>")
+        $(".total-price").append("<h3 class='alert alert-info mt-2'> The Total charge is " + totalPrice + " RwF</h3>")
 
         event.preventDefault();
     });
+
+
+   
+
 });
