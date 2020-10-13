@@ -256,12 +256,14 @@ $("document").ready(function() {
             orderedPizza.isDelivered = true;
         }
 
+        alert("Thank you for ordering.You order will be delivered to your place : "+orderedPizza.deliveryAddress);
+
         var totalPrice = orderedPizza.calculateTotalPrice();
         totalOrderedPrice += totalPrice;
 
-
+        
         orders.push(orderedPizza);
-
+        
 
         $(".total-price").append("<h3 class='alert alert-info mt-2'> The Total charge is " + totalOrderedPrice + " RwF</h3>")
 
