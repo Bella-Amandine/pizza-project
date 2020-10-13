@@ -131,6 +131,15 @@ $("document").ready(function() {
         $("#delivery-address").hide();
     });
 
+    function resetField() {
+        $("#pizza-name").val("");
+        $("input[type='radio'][name='delivered']").prop("checked", false);
+        $("input[type='checkbox'][name='toppings[]']").prop("checked", false);
+        $("#delivery-address").val("");
+        $("#delivery-address").hide();
+        $("#number-of-pizza").val("");
+    }
+
 
     $("form#order-form").submit(function(event) {
 
@@ -199,8 +208,10 @@ $("document").ready(function() {
 
         });
 
-
         event.preventDefault();
+
+        resetField();
+
     });
    
 
