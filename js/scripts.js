@@ -21,6 +21,7 @@ Pizza.prototype.setDeliveryAddress = function(deliveryAddress) {
 }
 
 Pizza.prototype.getPizzaSizePrice = function(pizzaSize) {
+
     if(pizzaSize === "small") {
         return 1000;
     }
@@ -39,6 +40,43 @@ Pizza.prototype.getPizzaCrustPrice = function(crust) {
         return 1500;
     }else {
         return 800;
+    }
+}
+
+Pizza.prototype.setToppings = function(toppings) {
+    
+    for(var i=0; i<toppings.length; i++) {
+
+        if(toppings[i] === "onion"){
+            this.toppings.push(onion)
+        }
+        if(toppings[i] === "tomatoe"){
+            this.toppings.push(tomatoe)
+        }
+        if(toppings[i] === "cheese"){
+            this.toppings.push(cheese)
+        }
+        if(toppings[i] === "spinach"){
+            this.toppings.push(spinach)
+        }
+        if(toppings[i] === "mushroom"){
+            this.toppings.push(mushroom)
+        }
+        if(toppings[i] === "olive"){
+            this.toppings.push(olive)
+        }
+        if(toppings[i] === "chicken"){
+            this.toppings.push(chicken)
+        }
+        if(toppings[i] === "saucage"){
+            this.toppings.push(saucage)
+        }
+        if(toppings[i] === "ham"){
+            this.toppings.push(ham)
+        }
+        if(toppings[i] === "pepper"){
+            this.toppings.push(pepper)
+        }
     }
 }
 
@@ -78,6 +116,9 @@ Pizza.prototype.calculateTotalPrice = function(numberOfOrders) {
 
 
 
+
+
+
 //front-end logic
 $("document").ready(function() {
 
@@ -108,39 +149,7 @@ $("document").ready(function() {
 
         var orderedPizza = new Pizza(inputtedPizzaName, selectedPizzaCrust, selectedPizzaSize);
         
-        for(var i=0; i<selectedToppings.length; i++) {
-            if(selectedToppings[i] === "onion"){
-                orderedPizza.toppings.push(onion)
-            }
-            if(selectedToppings[i] === "tomatoe"){
-                orderedPizza.toppings.push(tomatoe)
-            }
-            if(selectedToppings[i] === "cheese"){
-                orderedPizza.toppings.push(cheese)
-            }
-            if(selectedToppings[i] === "spinach"){
-                orderedPizza.toppings.push(spinach)
-            }
-            if(selectedToppings[i] === "mushroom"){
-                orderedPizza.toppings.push(mushroom)
-            }
-            if(selectedToppings[i] === "olive"){
-                orderedPizza.toppings.push(olive)
-            }
-            if(selectedToppings[i] === "chicken"){
-                orderedPizza.toppings.push(chicken)
-            }
-            if(selectedToppings[i] === "saucage"){
-                orderedPizza.toppings.push(saucage)
-            }
-            if(selectedToppings[i] === "ham"){
-                orderedPizza.toppings.push(ham)
-            }
-            if(selectedToppings[i] === "pepper"){
-                orderedPizza.toppings.push(pepper)
-            }
-        }
-        
+        orderedPizza.setToppings(selectedToppings);
 
         if(deliveryChoice === "true"){
            
@@ -172,8 +181,8 @@ $("document").ready(function() {
             });
  
             $(".ordered-pizza-name-price").text(0);
-            $(".ordered-pizza-size-price").text(orderedPizza.getPizzaSizePrice);
-            $(".ordered-pizza-crust-price").text(orderedPizza.getPizzaCrustPrice);
+            $(".ordered-pizza-size-price").text(orderedPizza.getPizzaSizePrice(selectedPizzaSize));
+            $(".ordered-pizza-crust-price").text(orderedPizza.getPizzaCrustPrice(this.pizzaCrust));
 
               if(orderedPizza.isDelivered === true){
                 $(".delivery-choice-price").text(orderedPizza.getDeliveryPrice);
